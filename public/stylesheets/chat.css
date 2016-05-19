@@ -20,37 +20,11 @@ html, input {
             sans-serif;
 }
 
-/*html, body {*/
-/*height: 100%;*/
-/*margin: 0;*/
-/*padding: 0;*/
-/*background:transparent*/
-/*}*/
-
-.mes {
-    list-style: none;
-    word-wrap: break-word;
-}
-
-/* Pages */
-
-.pages {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-.page {
-    height: 100%;
-    /*position: absolute;*/
-    width: 100%;
-}
 /* Font */
 
-.messages {
-    font-size: 150%;
-}
+/*.messages {*/
+    /*font-size: 150%;*/
+/*}*/
 
 .inputMessage {
     font-size: 100%;
@@ -63,34 +37,89 @@ html, input {
     text-align: center;
 }
 
-/* Messages */
 
-.chatArea {
-    height: 85%;
-    padding-bottom: 20px;
-}
+/*.messages {*/
+    /*height: 100%;*/
+    /*margin: 0;*/
+    /*overflow-y: scroll;*/
+    /*!*padding: 10px 20px 10px 20px;*!*/
+/*}*/
 
-.messages {
-    height: 100%;
-    margin: 0;
-    overflow-y: scroll;
-    /*padding: 10px 20px 10px 20px;*/
-}
-
-.message.typing .messageBody {
-    color: gray;
-}
+/*.message.typing .messageBody {*/
+    /*color: gray;*/
+/*}*/
 
 /* Input */
 
 .inputMessage {
-    border: 10px solid #000;
+    border: 5px solid #000;
     bottom: 0;
-    height: 60px;
+    height: 40px;
     left: 0;
     outline: none;
     /*padding-left: 10px;*/
     /*position: absolute;*/
     right: 0;
     width: 100%;
+}
+
+
+/***/
+.messageClearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.messagesul {
+    list-style-type: none;
+    margin: 0 0 5px 0;
+    padding: 0;
+    height:90%;
+    overflow-y: scroll;
+}
+
+.messagesul li {
+    margin: 5px 5px;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.messageHeader {
+    font-size: 12px;
+    color: #666;
+    padding: 5px;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.me .header {
+    background-color: lightyellow;
+}
+
+.who {
+    float: left;
+    font-weight: bold;
+}
+
+.when {
+    float: right;
+    font-style: italic;
+    color: #999;
+}
+
+.msg {
+    padding: 5px;
+}
+
+.notice {
+    padding: 5px;
+    color: #999;
+    font-style: italic;
 }
